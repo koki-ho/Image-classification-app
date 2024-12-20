@@ -37,7 +37,7 @@ Image-classification-app/
 ├── app.py             　# メインアプリ
 ├── model/             　# 事前学習モデル
 │   ├── model_vgg.pth  　# 学習済パラメーター
-│   └── predict_net.py 　# モデル定義
+│   └── predict_net.py 　# モデルクラスの定義
 ├── templates/         　# HTML テンプレート
 │   ├── layout.html    　# 全体のレイアウト
 │   ├── index.html     　# 画像アップロードフォーム

@@ -1,12 +1,14 @@
 {% extends "layout.html" %}
 {% block content %}
-<div class="container">
-  <div class="col content">
-    <h1>画像分類</h1>
-    <form method="post", enctype="multipart/form-data", action="/result">
-      <input name="file" type="file">
-      <input type="submit", value="判定">
-    </form>
-  </div>
+<div class="text-center">
+  <h2>画像をアップロードして分類を開始</h2>
+  <form method="post" enctype="multipart/form-data" action="/result" class="mt-4">
+    <div class="form-group d-flex justify-content-center">
+      <input name="file" type="file" class="form-control-file">
+    </div>
+    <div class="d-flex justify-content-end mt-3">
+      <button type="submit" class="btn btn-primary btn-lg">判定</button>
+    </div>
+  </form>
 </div>
 {% endblock %}

@@ -1,13 +1,13 @@
 {% extends "layout.html" %}
 {% block content %}
-<div class="container">
-  <div class="col content">
-    <h1>判定結果</h1>
-    {{ result | safe }}
-    <p><img src="{{ filepath }}"></p>
-    <form method="get" action="/">
-      <button class="submit">戻る</button>
-    </form>
+<div class="text-center">
+  <h2>判定結果</h2>
+  <div class="mt-4">
+    <p class="font-weight-bold" style="font-size: 1.5rem;">{{ result | safe }}</p>
+    <img src="{{ filepath }}" alt="Uploaded Image" class="img-fluid mt-3 rounded shadow">
   </div>
+  <form method="get" action="/" class="mt-4">
+    <button class="btn btn-secondary btn-lg">戻る</button>
+  </form>
 </div>
 {% endblock %}

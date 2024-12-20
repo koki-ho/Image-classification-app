@@ -12,7 +12,9 @@ from PIL import Image
 #定義したクラスの呼び出し
 from model.predict_net import VGGNet
 
+#フォルダ保存先
 UPLOAD_FOLDER = "./static/images/"
+#指定ファイル
 ALLOWED_EXTENSIONS = {"png", "jpg", "jpeg", "gif"}
 
 labels = ["飛行機", "自動車", "鳥", "猫", "鹿", "犬", "カエル", "馬", "船", "トラック"]
